@@ -1,0 +1,16 @@
+{
+  "version": "2.5.0",
+  "summary": {
+    "title": "Risk owner excersice",
+    "owner": "Simon",
+    "description": "based on ",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [],
+    "diagramTop": 0,
+    "reviewer": "",
+    "threatTop": 0
+  }
+}
