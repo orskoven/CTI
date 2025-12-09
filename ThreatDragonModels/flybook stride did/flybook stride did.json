@@ -19,8 +19,8 @@
         "cells": [
           {
             "position": {
-              "x": 740,
-              "y": 220
+              "x": 810,
+              "y": 110
             },
             "size": {
               "width": 120,
@@ -583,51 +583,6 @@
             }
           },
           {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Data Flow"
-            ],
-            "id": "6cae05e7-e761-4b2c-9970-02c1f2684c38",
-            "source": {
-              "x": 223,
-              "y": 16
-            },
-            "target": {
-              "x": 323,
-              "y": 116
-            }
-          },
-          {
             "position": {
               "x": 110,
               "y": -15
@@ -648,6 +603,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -731,11 +687,10 @@
               ]
             },
             "id": "6f8a60dd-7046-4e76-a1c6-a4f011c39483",
-            "zIndex": 11,
             "data": {
               "type": "tm.Actor",
               "name": "Admin",
-              "description": "",
+              "description": "checks the status of api frontend service and mysql database ",
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -765,6 +720,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -848,17 +804,61 @@
               ]
             },
             "id": "b6325110-fcdd-4293-b463-39ff93a332c5",
-            "zIndex": 12,
             "data": {
               "type": "tm.Actor",
               "name": "Service",
-              "description": "",
+              "description": "checks the status of servers and database",
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 13,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "6cae05e7-e761-4b2c-9970-02c1f2684c38",
+            "source": {
+              "x": 223,
+              "y": 16
+            },
+            "target": {
+              "cell": "b6325110-fcdd-4293-b463-39ff93a332c5",
+              "port": "00c09cdc-77fc-4df8-b477-f6689725299f"
             }
           }
         ],
