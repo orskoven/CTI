@@ -583,6 +583,61 @@
             }
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "HTTP get status",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "HTTP get status"
+            ],
+            "id": "5848a2d0-5e38-479a-91d1-b2876fe8b488",
+            "source": {
+              "cell": "6f8a60dd-7046-4e76-a1c6-a4f011c39483",
+              "port": "994f189e-8238-4107-a5cc-e6e84588ff2f"
+            },
+            "target": {
+              "cell": "b6325110-fcdd-4293-b463-39ff93a332c5",
+              "port": "00c09cdc-77fc-4df8-b477-f6689725299f"
+            },
+            "vertices": [
+              {
+                "x": 330,
+                "y": 15
+              },
+              {
+                "x": 360,
+                "y": 15
+              }
+            ]
+          },
+          {
             "position": {
               "x": 110,
               "y": -15
@@ -814,6 +869,13 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           }
         ],
